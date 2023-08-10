@@ -44,7 +44,7 @@ const Home = () => {
                         idx={22} />
                 </h1>
                 <h2>with Ernesto Mederos Garcia</h2>
-                <h2 className='subtitle'>Fullstack developer / Linguist </h2>
+                <h2 className='subtitle'>Fullstack Developer / Linguist </h2>
                 <Link to="contact" className='flat-button'> 
                 CONTACT ME
                 </Link>

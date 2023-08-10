@@ -1,0 +1,87 @@
+.contact-page {
+    background: url(../../assets/images/contact-bg.jpg) no-repeat right fixed;
+    background-size: cover;
+    top: 0;
+    height: 100%;
+
+    ul {
+        padding: 0;
+        margin: 0;
+
+        .name-and-email-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+        }
+
+        li {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            margin-bottom: 10px;
+            overflow: hidden;
+            display: block;
+            position: relative;
+            opacity: 0;
+            animation: fadeInUp 2s 2s;
+            animation-fill-mode: forwards;
+        }
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        width: 100%;
+        border: 0;
+        background: var(--input-color);
+        height: 50px;
+        font-size: 16px;
+        color: var(--general-color);
+        padding: 0 20px;
+        box-sizing: border-box;
+        border-radius: 4px;
+        transition: all .5s ease-in-out;
+    }
+
+    textarea {
+        width: 100%;
+        border: 0;
+        background: var(--input-color);
+        height: 50px;
+        font-size: 16px;
+        color: var(--general-color);
+        padding: 20px;
+        min-height: 150px;
+        box-sizing: border-box;
+        border-radius: 4px;
+        transition: all .5s ease-in-out;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        &:focus {
+            outline: 0;
+            background: var(--input-focus-bg);
+            color: var(--text-color);
+
+        }
+    }
+
+    .flat-button {
+        color: var(--text-color);
+        background: var(--accent-color);
+        font: 11px;
+        letter-spacing: 3px;
+        text-decoration: none;
+        padding: 8px 10px;
+        border: 2px solid var(--accent-color);
+        float: left;
+        border-radius: 4px;
+
+        &:hover {
+            background: var(--text-color);
+            color: var(--accent-color);
+        }
+    }
+
+}

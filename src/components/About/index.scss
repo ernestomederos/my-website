@@ -1,0 +1,18 @@
+.about-page {
+    background: url(../../assets/images/about-bg.jpg) no-repeat center fixed;
+    background-size: cover;
+    top: 0;
+    height: 100%;
+
+   
+    .text-zone {
+        p {
+            font-family: sans-serif;
+            color: var(--text-color);
+            font-weight: 400;
+            font-size: 11px;
+            letter-spacing: 2.5px;
+            line-height: 20px;
+        }
+    }
+}

@@ -4,15 +4,108 @@
     top: 0;
     height: 100%;
 
-   
     .text-zone {
-        p {
-            font-family: sans-serif;
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        margin: 5%;
+        margin-top: 10%;
+        height: 65%;
+        background: rgba(0, 0, 0, 0.711);
+        padding: 2%;
+        border-radius: 10px;
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
             color: var(--text-color);
-            font-weight: 400;
-            font-size: 11px;
+            font-weight: 700;
+            font-size: 40px;
             letter-spacing: 2.5px;
-            line-height: 20px;
+            line-height: 50px;
+            margin-bottom: 20px;
+            max-width: 450px;
+        }
+
+        p {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text-color);
+            font-weight: 500;
+            font-size: 16px;
+            letter-spacing: 2.5px;
+            line-height: 25px;
+            margin-bottom: 20px;
+            max-width: 450px;
+        }
+
+        ul {
+            position: relative;
+            width: 100%;
+            display: flex;
+            padding: 0;
+            list-style: none;
+            margin-top: 5px;
+
+            li {
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+
+                a {
+                    padding: 7px 0;
+                    display: block;
+                    font-size: 32px;
+                    line-height: 16px;
+
+                    &:hover svg {
+                        transition: all .4s ease;
+                        color: var(--accent-color);
+                    }
+                }
+            }
         }
     }
+}
+
+@media screen and (max-width: 920px) {
+
+    .about-page {
+
+        .text-zone {
+            margin: 5%;
+            margin-top: 40%;
+            height: fit-content;
+            padding: 5%;
+            border-radius: 10px;
+
+            h1 {
+                font-size: 25px;
+                max-width: 270px;
+            }
+
+            p {
+                font-family: 'Montserrat', sans-serif;
+                color: var(--text-color);
+                font-weight: 500;
+                font-size: 11px;
+                letter-spacing: 2.5px;
+                line-height: 25px;
+                margin-bottom: 20px;
+                max-width: 450px;
+
+                &:nth-child(3) {
+                    display: none;
+                }
+            }
+
+            ul {
+                li {
+                    a {
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+
 }

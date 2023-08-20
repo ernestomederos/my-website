@@ -85,3 +85,30 @@
     }
 
 }
+
+@media screen and (max-width: 920px) {
+    .contact-page {
+        background: url(../../assets/images/contact-bg.jpg) no-repeat left fixed;
+        background-size: cover;
+
+        ul {
+            .name-and-email-container {
+                grid-template-columns: 1fr;
+                min-width: 270px;
+            }
+
+            li {
+                margin-bottom: 10px;
+            }
+        }
+
+        textarea {
+            margin-top: 10px;
+        }
+
+        .flat-button {
+            width: 100%;
+        }
+
+    }
+}

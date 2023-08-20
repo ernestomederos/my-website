@@ -1,8 +1,9 @@
 .home-page {
-    background: url('../../assets/images/home-bg.jpg');
+    background:url('../../assets/images/home-bg.jpg') no-repeat fixed;
     top: 0;
     bottom: 0;
     height: 100%;
+    width: 100%;
 
     .text-zone {
         position: absolute;
@@ -10,6 +11,7 @@
         top: 50%;
         transform: translateY(-50%);
         width: 40%;
+        min-width: 800px;
         max-height: 90%;
     }
 
@@ -62,5 +64,39 @@
             background: var(--text-color);
             color: var(--accent-color);
         }
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .home-page {
+        background:url('../../assets/images/home-bg.jpg') no-repeat center fixed;
+
+        .text-zone {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            max-height: 80%;
+
+
+            h1 {
+                font-size: 32px;
+            }
+            h2 {
+                font-size: 12px;
+            }
+
+            .subtitle {
+                font-size: 11px;
+            }
+
+            .flat-button {
+                max-width: 125px;
+                margin-top: 25px;
+                transition: all .2s ease-in-out;
+            }
+
+
+        }
+
     }
 }

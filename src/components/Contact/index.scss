@@ -126,8 +126,8 @@
 @media screen and (max-width: 920px) {
     .contact-page {
 
-        background: url(../../assets/images/contact-bg.svg) no-repeat top fixed;
-        bottom: 0;
+        background: url(../../assets/images/contact-bg.svg) no-repeat center;
+        top: 0;
         background-size: cover;
 
         .text-zone {
@@ -138,17 +138,19 @@
             justify-content: center;
             align-items: center;
             margin: 0;
-            top: 60%;
+            top: 55%;
             width: 90%;
             margin-left: 5%;
             min-width: 260px;
 
             h1 {
+                color: var(--general-color);
                 font-size: 30px;
                 line-height: 36px;
                 letter-spacing: -3px;
                 max-width: 300px;
-                // margin-bottom: 5%;
+                margin-bottom: 8%;
+                border-color: 1px solid var(--text-color);
             }
 
             .subtitle {
@@ -175,7 +177,6 @@
 
                 input {
                     width: 100%;
-
                     font-size: 14px;
                     line-height: 17px;
                     letter-spacing: 0px;
@@ -186,6 +187,9 @@
                     width: 270px;
                     font-size: 14px;
                     margin-top: 5px;
+                    height: 100px;
+                    min-height: 40px;
+                    padding-top: 5px;
                 }
 
                 .flat-button {

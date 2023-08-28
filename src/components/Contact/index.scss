@@ -1,12 +1,37 @@
 .contact-page {
-    background: url(../../assets/images/contact-bg.jpg) no-repeat right fixed;
+    background: url(../../assets/images/contact-bg.svg) no-repeat right fixed;
     background-size: cover;
     top: 0;
     height: 100%;
 
+    h1 {
+        color: var(--text-color);
+        font-size: 110px;
+        line-height: 130px;
+        letter-spacing: -10px;
+        font-family: 'Helvetica-Neu', sans-serif;
+        font-weight: 1000;
+        margin: 0;
+    }
+
+    h2 {
+        color: var(--text-color);
+        font-family: 'Montserrat-Thin';
+        font-size: 20px;
+        line-height: 26px;
+        font-weight: 200;
+        letter-spacing: 0px;
+        max-width: 600px;
+        animation: fadeIn 1s 1.5s backwards;
+    }
+
     ul {
         padding: 0;
         margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
         .name-and-email-container {
             display: grid;
@@ -31,24 +56,31 @@
     input[type="text"],
     input[type="email"] {
         width: 100%;
-        border: 0;
+        border: 1px solid var(--accent-color);
         background: var(--input-color);
+        font-family: 'Montserrat-Thin';
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: 0px;
         height: 50px;
-        font-size: 16px;
-        color: var(--general-color);
+        color: var(--text-color);
         padding: 0 20px;
         box-sizing: border-box;
+        margin: 0;
         border-radius: 4px;
         transition: all .5s ease-in-out;
     }
 
     textarea {
-        width: 100%;
-        border: 0;
+        font-family: 'Helvetica-Neu';
+        width: 500px;
+        border: 1px solid var(--accent-color);
         background: var(--input-color);
         height: 50px;
-        font-size: 16px;
-        color: var(--general-color);
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: 0px;
+        color: var(--text-color);
         padding: 20px;
         min-height: 150px;
         box-sizing: border-box;
@@ -68,18 +100,23 @@
     }
 
     .flat-button {
-        color: var(--text-color);
+        color: var(--general-color);
         background: var(--accent-color);
-        font: 11px;
-        letter-spacing: 3px;
+        font-size: 13px;
+        width: 150px;
+        font-weight: 400;
+        letter-spacing: 4px;
+        font-family: sans-serif;
         text-decoration: none;
-        padding: 8px 10px;
-        border: 2px solid var(--accent-color);
-        float: left;
+        padding: 10px 18px;
+        border: 1px solid var(--accent-color);
         border-radius: 4px;
+        transition: all .2s ease-in-out;
+        animation: fadeIn 1s 1.8s backwards;
+        margin-top: 10px;
 
         &:hover {
-            background: var(--text-color);
+            background: var(--general-color);
             color: var(--accent-color);
         }
     }
@@ -88,27 +125,75 @@
 
 @media screen and (max-width: 920px) {
     .contact-page {
-        background: url(../../assets/images/contact-bg.jpg) no-repeat left fixed;
+
+        background: url(../../assets/images/contact-bg.svg) no-repeat top fixed;
+        bottom: 0;
         background-size: cover;
 
-        ul {
-            .name-and-email-container {
-                grid-template-columns: 1fr;
-                min-width: 270px;
+        .text-zone {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            top: 60%;
+            width: 90%;
+            margin-left: 5%;
+            min-width: 260px;
+
+            h1 {
+                font-size: 30px;
+                line-height: 36px;
+                letter-spacing: -3px;
+                max-width: 300px;
+                // margin-bottom: 5%;
             }
 
-            li {
-                margin-bottom: 10px;
+            .subtitle {
+                font-size: 14px;
+                line-height: 17px;
+                letter-spacing: 0px;
+                max-width: 280px;
+            }
+
+            .contact-form {
+
+                ul {
+                    .name-and-email-container {
+                        grid-template-columns: 1fr;
+                        min-width: 270px;
+                        grid-gap: 2px;
+                    }
+
+                    li {
+                        margin-bottom: 5px;
+                    }
+
+                }
+
+                input {
+                    width: 100%;
+
+                    font-size: 14px;
+                    line-height: 17px;
+                    letter-spacing: 0px;
+                    height: 35px;
+                }
+
+                textarea {
+                    width: 270px;
+                    font-size: 14px;
+                    margin-top: 5px;
+                }
+
+                .flat-button {
+                    width: 270px;
+                }
+
             }
         }
-
-        textarea {
-            margin-top: 10px;
-        }
-
-        .flat-button {
-            width: 100%;
-        }
-
     }
+
 }

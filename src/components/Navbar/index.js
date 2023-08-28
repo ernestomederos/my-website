@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-//import Logo from '../logos/logo.png';
 import './index.scss';
-// import { Button } from '../Button/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faComputerMouse } from '@fortawesome/free-solid-svg-icons';
 

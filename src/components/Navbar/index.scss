@@ -78,7 +78,7 @@
 
           &:hover {
             scale: 1.1;
-            opacity: .5;
+      color: var(--accent-color);
             // color: var(--accent-color);
             // border-bottom: 4px solid var(--general-color);
             
@@ -137,6 +137,7 @@
           // padding: 1em;
   
           .nav-links {
+            color: var(--accent-color);
             border-radius: 50px;
             width: 80%;
             height: 100%;
@@ -146,9 +147,9 @@
     
 
             &:hover {
-              background: var(--text-color);
-              color: var(--general-color);
-              border: 0;
+         
+              opacity: 1;
+              border: 1px solid var(--border-color);
             }
           }
         }

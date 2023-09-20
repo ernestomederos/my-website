@@ -1,6 +1,5 @@
 import './index.scss';
-import Loader from 'react-loaders';
-import AnimatedLetters from '../AnimatedLetters';
+// import Loader from 'react-loaders';
 import { useEffect, useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
@@ -52,10 +51,7 @@ export default function Contact() {
             <div className='container contact-page'>
                 <div className='text-zone'>
                     <h1>
-                        <AnimatedLetters
-                            letterClass={letterClass}
-                            strArray={['C', 'O', 'N', 'T', 'A', 'C', 'T']}
-                            idx={15} />
+                        CONTACT ME
                     </h1>
                     <h2 className='subtitle'>
                         My inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!
@@ -85,7 +81,7 @@ export default function Contact() {
                 </div>
 
             </div>
-            <Loader type='pacman' />
+            {/* <Loader type='pacman' /> */}
         </>
     );
 

@@ -1,39 +1,44 @@
 .about-page {
 
-    background: url(../../assets/images/about-bg.svg) no-repeat bottom fixed;
+    background: url(../../assets/images/about-bg.svg) no-repeat fixed;
     background-size: cover;
-    bottom: 0;
-    height: 100%;
-    overflow: scroll;
-
-    .text-zone {
-        position: absolute;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        left: 10%;
-        top: 50%;
-        gap: 5%;
-        transform: translateY(-50%);
+    background-position: center;
+    height: 100vh;
+    
+    .sections-container {
+        margin-top: 3em;
+        display: flex;
         width: 100%;
-        min-width: 800px;
-        max-height: 75%;
-        text-align: left;
-        justify-content: center;
-        align-items: center;
+        flex-direction: column;
+        
+        section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            
+            img {
+                width: 200px;
+                height: 250px;
+                object-fit: cover;
+                border-radius: 50%;
+                border-style: none;
+                box-shadow: 0px 0px 20px 0px var(--accent-color);
+            }
 
-        .about-section {
             h1 {
                 color: var(--text-color);
                 font-size: 100px;
                 line-height: 120px;
                 letter-spacing: -7px;
                 margin: 0;
-                margin-left: -17px;
                 font-weight: 1000;
+                margin-top: .2em;
 
             }
 
-            p {
+            span {
+                margin-top: .3em;
                 font-family: 'Helvetica-Neu';
                 color: var(--text-color);
                 font-weight: 200;
@@ -42,121 +47,66 @@
                 line-height: 26px;
                 max-width: 700px;
             }
-
-            p:nth-child(3) {
-                margin-bottom: 60px;
-            }
-
-            .flat-button {
-                color: var(--accent-color);
-                background: var(--general-color);
-                font-size: 13px;
-                width: 150px;
-                font-weight: 400;
-                letter-spacing: 4px;
-                font-family: sans-serif;
-                text-decoration: none;
-                padding: 10px 18px;
-                border: 1px solid var(--accent-color);
-                border-radius: 4px;
-                white-space: nowrap;
-                animation: fadeIn 1s 1.8s backwards;
-                transition: all .2s ease-in-out;
-
-                &:hover {
-                    background: var(--text-color);
-                    color: var(--general-color);
-                }
-            }
-
         }
+    }
 
-        .image-container {
-            margin-top: -250px;
-            width: 250px;
-            height: 250px;
-            display: flex-end;
-            justify-content: center;
+    .button {
+        align-self: center;
+        margin-top: 4em;
+        color: var(--accent-color);
+        background: var(--general-color);
+        font-size: 13px;
+        width: fit-content;
+        font-weight: 400;
+        letter-spacing: 4px;
+        font-family: sans-serif;
+        text-decoration: none;
+        padding: 10px 18px;
+        border: 1px solid var(--accent-color);
+        border-radius: 4px;
+        white-space: nowrap;
+        animation: fadeIn 1s .2s backwards;
+        transition: all .2s ease-in-out;
 
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                border-radius: 50%;
-                border: 5px solid var(--accent-color);
-
-            }
+        &:hover {
+            background: var(--text-color);
+            color: var(--general-color);
         }
     }
 }
 
-
 @media screen and (max-width: 920px) {
-
     .about-page {
+        .sections-container {
+            margin-top: 2em;
 
-        .text-zone {
-            // background: blue;
-            position: absolute;
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-row: auto;
-            top: 290px;
-            left: 10%;
-            width: 80%;
-            // height: fit-content;
-            min-width: 260px;
-
-            .about-section {
-                grid-column: 1;
-                grid-row: 2/3;
+            section {
+                img {
+                    width: 80px;
+                    height: 105px;
+                }
 
                 h1 {
-                    font-size: 30px;
-                    line-height: 36px;
+                    font-size: 28px;
+                    line-height: 32px;
                     letter-spacing: -2px;
-                    max-width: 300px;
+                    font-weight: 100;
                 }
 
-                p {
-                    font-size: 14px;
-                    line-height: 17px;
-                    letter-spacing: 0px;
-                    margin-bottom: 20px;
-                    max-width: 520px;
-                    margin-right: 20px;
-
+                span {
+                    margin-top: .2em;
+                    font-size: 11px;
+                    line-height: 15px;
+                    padding: 1em;
                 }
 
-                p:nth-child(2) {
-                    // display: none;
-                }
-
-                p:nth-child(3) {
-                    margin-bottom: 30px;
-                }
             }
 
-            .image-container {
-                margin-top: 10px;
-                width: 80px;
-                height: 80px;
-                justify-content: center;
-
-                img {
-                    transition: all .3s ease-in-out;
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    border-radius: 50%;
-                    border: 2px solid var(--accent-color);
-                    cursor: pointer;
-                }
+            .button {
+                margin-top: 1em;
+                font-size: 11px;
+                padding: 8px 12px;
             }
-
-
-
         }
     }
-
 }

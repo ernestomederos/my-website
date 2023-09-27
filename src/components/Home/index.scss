@@ -1,8 +1,9 @@
 .home-page {
-    background: url('../../assets/images/home-bg.svg') no-repeat;
+    background: url('../../assets/images/home-bg.svg') no-repeat fixed;
     background-size: cover;
-    top: 0;
-    height: 100%;
+    // top: 0;
+    height: 100vh;
+    width: 100%;
 
     .text-zone {
         position: absolute;

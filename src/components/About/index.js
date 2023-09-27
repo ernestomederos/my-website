@@ -1,7 +1,8 @@
 import './index.scss';
 import Hero from '../../assets/images/hero-image.png';
-import { Link } from 'react-router-dom';
-
+// import { Link } from 'react-router-dom';
+import Portfolio from '../Portfolio';
+import TechStack from '../Tech-Stack';
 
 export default function About() {
 
@@ -19,8 +20,9 @@ export default function About() {
                         Growing up in the always-unstable environment of Havana instilled in me the adaptability of a water bear, enabling me to thrive amid challenges. Now, I find myself in Berlin, driven by a fervent desire to contribute as a Web Developer. I aspire to weave solutions, forge connections, implement innovations, and envision technologies that propel humanity forward.
                     </span>
                 </section>
-                <Link className="button" to="../portfolio">MY PORTFOLIO</Link>
-
+                <a className="button" href="#portfolio">MY PORTFOLIO</a>
+                <Portfolio />
+                <TechStack />
                 {/* <section className="section">
                     <h1 className='section-name'>Skills</h1>
                 </section>

@@ -2,7 +2,8 @@
     background: url(../../assets/images/contact-bg.svg) no-repeat top fixed;
     background-size: cover;
     top: 0;
-    height: 100%;
+    height: 100vh;
+    width: 100%;
 
     h1 {
         color: var(--text-color);

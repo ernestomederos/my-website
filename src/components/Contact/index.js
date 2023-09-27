@@ -6,11 +6,11 @@ import emailjs from '@emailjs/browser';
 export default function Contact() {
     const [letterClass, setLetterClass] = useState('text-animate');
 
-    useEffect(() => {
-        setTimeout(() => {
-            return setLetterClass('text-animate-hover')
-        }, 3000)
-    }, []);
+    // useEffect(() => {
+    //     setTimeout(() => {
+    //         return setLetterClass('text-animate-hover')
+    //     }, 3000)
+    // }, []);
 
     const form = useRef();
     const [formData, setFormData] = useState({

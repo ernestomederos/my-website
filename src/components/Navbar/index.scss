@@ -78,10 +78,10 @@
 
           &:hover {
             scale: 1.1;
-      color: var(--accent-color);
+            color: var(--accent-color);
             // color: var(--accent-color);
             // border-bottom: 4px solid var(--general-color);
-            
+
           }
         }
       }
@@ -135,7 +135,7 @@
           margin-left: -40px;
           margin-top: 30px;
           // padding: 1em;
-  
+
           .nav-links {
             color: var(--accent-color);
             border-radius: 50px;
@@ -144,10 +144,10 @@
             display: flex;
             padding: 0;
             justify-content: center;
-    
+
 
             &:hover {
-         
+
               opacity: 1;
               border: 1px solid var(--border-color);
             }

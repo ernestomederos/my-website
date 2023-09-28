@@ -1,0 +1,194 @@
+.portfolio-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .section-name {
+        color: var(--text-color);
+        font-size: 100px;
+        line-height: 120px;
+        letter-spacing: -7px;
+        font-weight: 600;
+        margin-top: .2em;
+    }
+    .cards-container {
+   
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-bottom: 3em;
+        gap: 5em;
+
+        .card {
+            padding: 4em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 2em;
+            flex-direction: column;
+            width: 300px;
+            height: 400px;
+            background: var(--general-color);
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px 0px var(--accent-color);
+            transition: all .2s ease-in-out;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+
+            img {
+                width: 350px;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 4px;
+                border-style: none;
+                box-shadow: 0px 0px 20px 0px var(--accent-color);
+            }
+
+            h2 {
+                margin-top: 1.5em;
+                font-family: 'Helvetica';
+                color: var(--text-color);
+                font-weight: 600;
+                font-size: 24px;
+                letter-spacing: 0px;
+                line-height: 26px;
+                max-width: 700px;
+            }
+
+            span {
+                margin-top: .3em;
+                font-family: 'Helvetica';
+                color: var(--text-color);
+                font-size: 18px;
+                letter-spacing: 0;
+                line-height: 22px;
+                max-width: 700px;
+            }
+        }
+
+    }
+}
+
+
+// .portfolio-page {
+
+//     background: url(../../assets/images/about-bg.svg) no-repeat fixed;
+//     background-size: cover;
+//     background-position: center;
+//     height: 100vh;
+
+//     h1 {
+//         color: var(--text-color);
+//         font-size: 100px;
+//         line-height: 120px;
+//         letter-spacing: -7px;
+//         margin: 0;
+//         font-weight: 600;
+//         margin-top: .2em;
+
+//     }
+//     .sections-container {
+//         margin-top: 3em;
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         width: 100%;
+//         flex-direction: column;
+
+
+//         section {
+//             display: flex;
+//             align-items: center;
+//             justify-content: center;
+//             margin-top: 5em;
+
+
+//             img {
+//                 width: 200px;
+//                 height: 250px;
+//                 object-fit: cover;
+//                 border-radius: 50%;
+//                 border-style: none;
+//                 box-shadow: 0px 0px 20px 0px var(--accent-color);
+//             }
+
+
+//             span {
+//                 margin-top: .3em;
+//                 font-family: 'Helvetica-Neu';
+//                 color: var(--text-color);
+//                 font-weight: 200;
+//                 font-size: 20px;
+//                 letter-spacing: 0px;
+//                 line-height: 26px;
+//                 max-width: 700px;
+//             }
+//         }
+//     }
+
+//     .button {
+//         align-self: center;
+//         margin-top: 4em;
+//         color: var(--accent-color);
+//         background: var(--general-color);
+//         font-size: 13px;
+//         width: fit-content;
+//         font-weight: 400;
+//         letter-spacing: 4px;
+//         font-family: sans-serif;
+//         text-decoration: none;
+//         padding: 10px 18px;
+//         border: 1px solid var(--accent-color);
+//         border-radius: 4px;
+//         white-space: nowrap;
+//         animation: fadeIn 1s .2s backwards;
+//         transition: all .2s ease-in-out;
+
+//         &:hover {
+//             background: var(--text-color);
+//             color: var(--general-color);
+//         }
+//     }
+// }
+
+// @media screen and (max-width: 920px) {
+//     .about-page {
+//         .sections-container {
+//             margin-top: 6em;
+
+//             section {
+//                 img {
+//                     width: 80px;
+//                     height: 105px;
+//                 }
+
+//                 h1 {
+//                     font-size: 28px;
+//                     line-height: 32px;
+//                     letter-spacing: -2px;
+//                     font-weight: 100;
+//                 }
+
+//                 span {
+//                     margin-top: .2em;
+//                     font-size: 11px;
+//                     line-height: 15px;
+//                     padding: 1em;
+//                 }
+
+//             }
+
+//             .button {
+//                 margin-top: 2em;
+//                 font-size: 11px;
+//                 padding: 8px 12px;
+//             }
+//         }
+//     }
+// }
